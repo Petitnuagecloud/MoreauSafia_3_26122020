@@ -1,11 +1,11 @@
 @import url("fontawesome.min.css");
 @font-face {
 	font-family: "Shrikhand";
-	src: url('Shrikhand-Regular.ttf');
+	src: url('../font/Shrikhand-Regular.ttf');
 }
 @font-face {
 	font-family: "Roboto";
-	src: url('Roboto-Regular.ttf');
+	src: url('../font/Roboto-Regular.ttf');
 }
 a {
     text-decoration: none;
@@ -94,6 +94,11 @@ h1 {
     border: none;
     box-shadow: 0 0 16px #C6C6C6;
 }
+.explorerbutton:hover {
+    box-shadow: 0 0 16px#797979;
+    opacity: 0.9;
+    transition: 0.5s;
+}
 .subtitle {
     padding-left: 20px; 
     padding-top: 20px;
@@ -157,6 +162,11 @@ h1 {
     display: flex;
     box-shadow: 0 0 16px #C6C6C6;
 }
+.filtre:hover {
+    box-shadow: 0 0 16px#797979;
+    background-color:#f9f9f9;
+    transition: 0.5s;
+}
 .textefiltre {
     margin-left: 30px;
     margin-right: auto;
@@ -201,11 +211,26 @@ h1 {
     max-height: 300px;
     margin-bottom: 20px;
 }
+.placecard:hover {
+    box-shadow: 0 0 16px#797979;
+    transition: 0.5s;
+}
 .placefigure {
     display: block;
 	width: 100%;
 	height: 100%;
-	margin: 0px;
+    margin: 0px;
+    position: relative;
+}
+.labelnew {
+    color:#008766;
+    background-color:#99E2D0 ;
+    font-size: 12px;
+    position: absolute;
+    margin-top: -160px;
+    margin-left: 265px;
+    padding: 5px;
+    border-radius: 2px;
 }
 .placephoto {
 	width: 100%;
@@ -225,9 +250,26 @@ h1 {
     margin-left: auto;
     font-size: 24px;
     margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hearticonude:hover {
+    opacity: 0;
+    margin-top: -100%;
 }
 .hearticonhover {
-    display: none;
+    position: absolute;
+    background:-webkit-linear-gradient(180deg, #FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity:0;
+}
+.hearticonhover:hover {
+    margin-top: -100%;
+    transition: 0.03s;
+    opacity: 1;
 }
 .figcaptionnote:nth-child(2) {
     order: 1;
@@ -300,9 +342,92 @@ h1 {
     font-family: "Roboto";
     min-width: 382px;
     height: 70px;
+    opacity:0;
+}
+.dishbtn {
+        animation: fadein;
+        Animation-name : fadein;
+        -moz-animation: fadein 2s; /* Firefox */
+        -webkit-animation: fadein 2s; /* Safari et Chrome */
+        -o-animation: fadein 2s; /* Opera */
+        animation-fill-mode: forwards;
+    }
+    @keyframes fadein {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @-moz-keyframes fadein { /* sur Firefox */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @-webkit-keyframes fadein { /* sur Safari et Chrome */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    @-o-keyframes fadein { /* sur Opera */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity: 1;
+        }
+    } 
+}
+.btn1 {
+    Animation-name : fadein ;
+    Animation-delay : 1s ;
+}
+.btn2 {
+    Animation-name : fadein ;
+    Animation-delay : 2s ;
+}
+.btn3 {
+    Animation-name : fadein ;
+    Animation-delay : 3s ;
+}
+.btn4 {
+    Animation-name : fadein ;
+    Animation-delay : 4s ;
+}
+.btn5 {
+    Animation-name : fadein ;
+    Animation-delay : 5s ;
+}
+.btn6 {
+    Animation-name : fadein ;
+    Animation-delay : 6s ;
+}
+.btn7 {
+    Animation-name : fadein ;
+    Animation-delay : 7s ;
+}
+.btn8 {
+    Animation-name : fadein ;
+    Animation-delay : 8s ;
+}
+.btn9 {
+    Animation-name : fadein ;
+    Animation-delay : 9s ;
+}
+.dishbtn:hover {
+    box-shadow: 0 0 16px#797979;
+    transition: 0.5s;
 }
 .dishtitle {
     font-weight: bold;
+    font-family: "Roboto";
     padding-bottom: 5px;
     font-size: 16px;
 }
@@ -332,6 +457,11 @@ h1 {
     border: none;
     box-shadow: 0 0 16px #C6C6C6;
     margin-bottom: 80px;
+}
+.commandbtn:hover {
+    box-shadow: 0 0 16px#797979;
+    opacity: 0.9;
+    transition: 0.5s;
 }
 .footerlink {
     text-decoration: none;
