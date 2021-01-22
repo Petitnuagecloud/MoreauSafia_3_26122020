@@ -12,6 +12,7 @@ a {
 }
 body {
     margin: 0px;
+    padding: 0px;
     font-family: "Roboto", sans-serif;
 }
 .header {
@@ -98,9 +99,14 @@ h1 {
     opacity: 0.9;
     transition: 0.5s;
 }
+.methodpart {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
 .subtitle {
-    padding-left: 20px; 
-    padding-top: 20px;
+    padding-left: 30px; 
+    margin:0px;
+    padding-top: 0px;
 }
 .selectsection {
     display: flex;
@@ -108,6 +114,7 @@ h1 {
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 16px;
+    padding-bottom: 20px;
 }
 .selectbutton {
     color: black;
@@ -153,8 +160,8 @@ h1 {
     border: none;
 	border-radius: 25px;
     margin-top: 30px;
-    margin-right: 25px;
-    margin-left: 25px;
+    margin-right: 0px;
+    margin-left: 0px;
     padding-top: 30px;
     padding-bottom: 25px;
 	align-items: center;
@@ -187,10 +194,9 @@ h1 {
 }
 .menucontainer {
     background-color: #F6F6F6;
-	margin-top: 60px;
-    margin-bottom: 60px;
-    padding: 30px;
     height: 100%;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 .globalplacescontainer {
 	display: flex;
@@ -252,6 +258,7 @@ h1 {
     margin-left: auto;
     margin-right: 20px;
     opacity:1;
+    cursor: pointer;
   }
 .heart1 {
     background-clip: text;
@@ -279,7 +286,6 @@ h1 {
     -moz-text-fill-color: transparent;
     transition-delay: 3s;
  }
-
 .heart2 {
     color: white;
     background-clip: text;
@@ -352,7 +358,10 @@ font-size: 24px;
     text-align: left;
 }
 .menucontainerpage {
+    display: flex;
+    flex-direction: column;
     padding-left: 25px;
+    padding-right: 25px;
     background-color: #f6f6f6;
 }
 .dishbtntitle {
@@ -365,57 +374,34 @@ font-size: 24px;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+    justify-content: space-between;
 }
 .dishbtntitlebox {
     width: 50px;
 }
 .dishbtn {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border: none;
-	border-radius: 16px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 25px;
-    padding: 16px 25px 16px 16px;
-    box-shadow: 0 0 16px #C6C6C6;
-    align-items: left;
-    text-align: left;
-    font-size: 14px;
-    font-family: "Roboto";
-    min-width: 382px;
-    height: 70px;
-    opacity:0;
-    z-index:1;
-}
-.selectanim {
-    background-color: #99E2D0;
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
-    display: flex;
-    height: 100%;
-    z-index: 2;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    background-clip:padding-box;
-    align-self: flex-end;
-}
-.circleanim {
-    color: white;
-    background-color: #99E2D0;
-    margin: 20px;
-    font-size: 24px;
-    animation-name: rollin;
-    animation-duration: 2s;
+display: flex;
+  background-color: white;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 0 16px #C6C6C6;
+  align-items: left;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 16px;
+  font-family: "Roboto";
+  min-width: 350px;
+  height: 75px;
+  z-index:1;
+  cursor: pointer;
+  opacity:0;
 }
 .dishbtn {
         animation: fadein;
         Animation-name : fadein;
-        -moz-animation: fadein 2s; /* Firefox */
-        -webkit-animation: fadein 2s; /* Safari et Chrome */
-        -o-animation: fadein 2s; /* Opera */
+        -moz-animation: fadein 1.5s; /* Firefox */
+        -webkit-animation: fadein 1.5s; /* Safari et Chrome */
+        -o-animation: fadein 1.5s; /* Opera */
         animation-fill-mode: forwards;
     }
     @keyframes fadein {
@@ -457,35 +443,11 @@ font-size: 24px;
 }
 .btn2 {
     Animation-name : fadein ;
-    Animation-delay : 2s ;
+    Animation-delay : 0.5s ;
 }
 .btn3 {
     Animation-name : fadein ;
-    Animation-delay : 3s ;
-}
-.btn4 {
-    Animation-name : fadein ;
-    Animation-delay : 4s ;
-}
-.btn5 {
-    Animation-name : fadein ;
-    Animation-delay : 5s ;
-}
-.btn6 {
-    Animation-name : fadein ;
-    Animation-delay : 6s ;
-}
-.btn7 {
-    Animation-name : fadein ;
-    Animation-delay : 7s ;
-}
-.btn8 {
-    Animation-name : fadein ;
-    Animation-delay : 8s ;
-}
-.btn9 {
-    Animation-name : fadein ;
-    Animation-delay : 9s ;
+    Animation-delay : 1s ;
 }
 .dishbtn:hover {
     box-shadow: 0 0 16px#797979;
@@ -494,15 +456,18 @@ font-size: 24px;
 .dishtitle {
     font-weight: bold;
     font-family: "Roboto";
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     font-size: 16px;
-}
-.dishdetails {
 }
 .dishdetailsbox {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    height: 100%;
+}
+.dishdetails {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .price {
     font-weight: bold;
@@ -510,8 +475,80 @@ font-size: 24px;
     margin-right: 10px;
     margin-left: auto;
 }
+.selectanim {
+    background-color: #99E2D0;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-sizing: border-box;
+    margin-right: -10px;
+    display: flex;
+    height: 75px;
+    z-index: 2;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-clip: padding-box;
+    width: 0%;
+    overflow: hidden;
+  }
+.circleanim {
+    color: white;
+    background-color: #99E2D0;
+    box-sizing: content-box;
+    font-size: 24px;
+    display: none;
+    z-index: 1;
+    position: absolute;
+  }
+.choice {
+    width: 100%;
+    height: 100%;
+    padding: 15px 10px 0px 5px;
+    display: flex;
+    flex-direction: column; 
+}
+.dishbtn:hover .circleanim {
+   -webkit-animation: roll-in-right 0.6s ease-out both;
+    animation: roll-in-right 0.6s ease-out both;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes roll-in-right {
+    0% {
+      -webkit-transform: translateX(80px) rotate(940deg);
+              transform: translateX(80px) rotate(940deg);
+      opacity: 0;
+    }
+    70% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-right {
+    0% {
+      -webkit-transform: translateX(80px) rotate(940deg);
+              transform: translateX(80px) rotate(940deg);
+      opacity: 0;
+    }
+    70% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+.dishbtn:hover .choice {
+    width: 80%;
+    transition-duration: 0.5s;
+  }
+.dishbtn:hover .selectanim {
+    display: flex;
+    width: 20%;
+    transition-duration: 0.5s;
+  }
+  
 .commandbtnbox {
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 .commandbtn {
@@ -523,6 +560,7 @@ font-size: 24px;
     border: none;
     box-shadow: 0 0 16px #C6C6C6;
     margin-bottom: 80px;
+    cursor: pointer;
 }
 .commandbtn:hover {
     box-shadow: 0 0 16px#797979;
@@ -532,7 +570,7 @@ font-size: 24px;
 .footerlink {
     text-decoration: none;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
 }
 .footericon {
     color: white;
@@ -542,6 +580,10 @@ font-size: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.headerphotobox {
+    max-height: 450px;
+    position: relative;
 }
 .headerphoto {
     width: 100%;
@@ -578,8 +620,31 @@ font-size: 24px;
 .footercontainer {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
+.menucontainerpage {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+.commandbtnbox {
+     display: block;
+     text-align: center;
+     height: 100%;
+     background-color: #F6F6F6;
+    }
+.commandbtn {
+    margin-bottom: 50px;
+}
+.selectedrestaurant {
+        display:flex;
+        justify-content: space-evenly;
+    }
+.selectedrestauranttitle {
+        padding-right: 20px;
+}
+.containerheart {
+    padding-left: 20px;
+}
 }
 @media screen and (max-width: 809px) {
     .globalplacescontainer {
@@ -588,4 +653,4 @@ font-size: 24px;
             flex-direction: column;
             flex-wrap: wrap;
         }
-    }
+}

@@ -11,17 +11,18 @@
    <body>
     <header class="header">
         <div class="navlogo">
-            <div><i class='fas fa-arrow-left logoicon'></i></div>
+            <div><a href="index.html"><i class='fas fa-arrow-left logoicon'></i></a></div>
             <div><img src="images/ohmyfood.png" alt="logo Ohmyfood" class="logo"/></div>
         </div>
-        <div><img class="headerphoto" src="bigimages/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+        <div class="headerphotobox"><img class="headerphoto" src="bigimages/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
         </div>
     </header>
 
     <div class="selectedrestaurant">
         <div class="iconespace">
             <h1 class="selectedrestauranttitle shrikhandtitle">À la française</h1>
-            <i class="fa fa-heart-o hearticon2"></i>
+            <div class="containerheart"><i class="fa fa-heart heart1"><i class="fa fa-heart-o heart2"></i></i>
+            </div>
         </div>
     </div>
 
@@ -30,90 +31,137 @@
             <div class="dishbtntitlebox"><h2 class="dishbtntitle">ENTRÉES</h2></div>
 
             <button class="dishbtn btn1">
-                <div class="dishtitle">Tartare de poulpe acidulé</div>
-                <div class="dishdetailsbox">
-                    <div class="dishdetails">Aux zests d'orange</div>
-                    <div class="price">25€</div>
-                    <div class="selectanim"><i class='fas fa-check-circle circleanim'></i></div>
+                <div class="choice">
+                    <div class="dishtitle">Tartare de poulpe acidulé</div>
+                    <div class="dishdetailsbox">
+                        <div class="dishdetails">Aux zests d'orange</div>
+                        <div class="price">25€</div>
+                    </div>
+                </div>
+                <div class="selectanim">
+                        <i class='fas fa-check-circle circleanim'></i>
                 </div>
             </button>
 
             <button class="dishbtn btn2">
-                <div class="dishtitle">Velouté de légumes d'antan</div>
-                <div class="dishdetailsbox">
-                    <div class="dishdetails">Carotte, panais, topinambour</div>
-                    <div class="price">35€</div>
+                <div class="choice">
+                    <div class="dishtitle">Velouté de légumes d'antan</div>
+                    <div class="dishdetailsbox">
+                        <div class="dishdetails">Carotte, panais, topinambour</div>
+                        <div class="price">35€</div>
+                    </div>
+                </div>
+                <div class="selectanim">
+                        <i class='fas fa-check-circle circleanim'></i>
                 </div>
             </button>
 
             <button class="dishbtn btn3">
-                <div class="dishtitle">Soupe à l'oignon</div>
-                <div class="dishdetailsbox">
-                    <div class="dishdetails">Revisitée</div>
-                    <div class="price">20€</div>
+                <div class="choice">
+                    <div class="dishtitle">Soupe à l'oignon</div>
+                    <div class="dishdetailsbox">
+                        <div class="dishdetails">Revisitée</div>
+                        <div class="price">20€</div>
+                    </div>
+                </div>
+                <div class="selectanim">
+                        <i class='fas fa-check-circle circleanim'></i>
                 </div>
             </button>
         </div>
-
         <div class="dishbtncontainer">
         <div class="dishbtntitlebox"><h2 class="dishbtntitle">PLATS</h2></div>
 
-        <button class="dishbtn btn4">
-            <div class="dishtitle">Coquilles Saint-Jacques</div>
-            <div class="dishdetailsbox">
-                <div class="dishdetails">Accompagnées d'une purée de panais</div>
-                <div class="price">40€</div>
+        <button class="dishbtn btn1">
+            <div class="choice">
+                <div class="dishtitle">Coquilles Saint-Jacques</div>
+                <div class="dishdetailsbox">
+                    <div class="dishdetails">Accompagnées d'une purée de panais</div>
+                    <div class="price">40€</div>
+                </div>
+            </div>
+            <div class="selectanim">
+                    <i class='fas fa-check-circle circleanim'></i>
             </div>
         </button>
 
-        <button class="dishbtn btn5">
-            <div class="dishtitle">Magret de canard</div>
-            <div class="dishdetailsbox">
-                <div class="dishdetails">Et parmentier de pommes de terres</div>
-                <div class="price">35€</div>
+        <button class="dishbtn btn2">
+            <div class="choice">
+                <div class="dishtitle">Magret de canard</div>
+                <div class="dishdetailsbox">
+                    <div class="dishdetails">Et parmentier de pommes de terres</div>
+                    <div class="price">35€</div>
+                </div>
+            </div>
+            <div class="selectanim">
+                    <i class='fas fa-check-circle circleanim'></i>
             </div>
         </button>
 
-        <button class="dishbtn btn6">
-            <div class="dishtitle">Pigeonneau d'Ille-et-Vilaine</div>
-            <div class="dishdetailsbox">
-                <div class="dishdetails">Sur son lit de gnocchis aux légumes</div>
-                <div class="price">44€</div>
+        <button class="dishbtn btn3">
+            <div class="choice">
+                <div class="dishtitle">Pigeonneau d'Ille-et-Vilaine</div>
+                <div class="dishdetailsbox">
+                    <div class="dishdetails">Sur son lit de gnocchis aux légumes</div>
+                    <div class="price">44€</div>
+                </div>
+            </div>
+            <div class="selectanim">
+                    <i class='fas fa-check-circle circleanim'></i>
             </div>
         </button>
+       
     </div>
         <div class="dishbtncontainer">
         <div class="dishbtntitlebox"><h2 class="dishbtntitle">DESSERTS</h2></div>
 
-        <button class="dishbtn btn7">
-            <div class="dishtitle">Pétales de violettes glacés</div>
-            <div class="dishdetailsbox">
-                <div class="dishdetails">Et purée de noisettes</div>
-                <div class="price">18€</div>
+        <button class="dishbtn btn1">
+            <div class="choice">
+                <div class="dishtitle">Pétales de violettes glacés</div>
+                <div class="dishdetailsbox">
+                    <div class="dishdetails">Et purée de noisettes</div>
+                    <div class="price">18€</div>
+                </div>
+            </div>
+            <div class="selectanim">
+                    <i class='fas fa-check-circle circleanim'></i>
             </div>
         </button>
 
-        <button class="dishbtn btn8">
-            <div class="dishtitle">Fondant au chocolat</div>
-            <div class="dishdetailsbox">
-                <div class="dishdetails">Revisité</div>
-                <div class="price">22€</div>
+        <button class="dishbtn btn2">
+            <div class="choice">
+                <div class="dishtitle">Fondant au chocolat</div>
+                <div class="dishdetailsbox">
+                    <div class="dishdetails">Revisité</div>
+                    <div class="price">22€</div>
+                </div>
+            </div>
+            <div class="selectanim">
+                    <i class='fas fa-check-circle circleanim'></i>
             </div>
         </button>
 
-        <button class="dishbtn btn9">
-            <div class="dishtitle">Millefeuille croustillant</div>
-            <div class="dishdetailsbox">
-                <div class="dishdetails">Myrtilles et pâte d'amande</div>
-                <div class="price">23€</div>
+        <button class="dishbtn btn3">
+            <div class="choice">
+                <div class="dishtitle">Millefeuille croustillant</div>
+                <div class="dishdetailsbox">
+                    <div class="dishdetails">Myrtilles et pâte d'amande</div>
+                    <div class="price">23€</div>
+                </div>
+            </div>
+            <div class="selectanim">
+                    <i class='fas fa-check-circle circleanim'></i>
             </div>
         </button>
+
     </div>
+</div>
+
     <div class="commandbtnbox">
         <button class="commandbtn">Commander</button>
     </div>
 
-    </div>
+    
 
 </body>
 <footer class="footer">
@@ -122,7 +170,7 @@
     <a href="#" class="footerlink"><i class='fas fa-utensils footericon'></i>Proposer un restaurant</a>
     <a href="#" class="footerlink"><i class='fas fa-handshake footericon'></i>Devenir partenaire</a>
     <a href="#" class="footerlink">Mentions légales</a>
-    <a href="#" class="footerlink">Contact</a>
+    <a href="mailto:" class="footerlink">Contact</a>
 </div>
 </footer>
 </html>
