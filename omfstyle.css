@@ -104,8 +104,8 @@ h1 {
     padding-top: 40px;
 }
 .subtitle {
-    padding-left: 30px; 
-    margin:0px;
+    margin-left: 20px; 
+    margin-bottom: 20px;
     padding-top: 0px;
 }
 .selectsection {
@@ -114,7 +114,7 @@ h1 {
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 16px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 .selectbutton {
     color: black;
@@ -202,8 +202,6 @@ h1 {
 	display: flex;
     flex-direction:column;
     align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 .placecard {
     display: block;
@@ -212,7 +210,7 @@ h1 {
 	padding: 0px;
 	box-shadow: 0 0 16px #cfcfcf;
 	box-sizing: border-box;
-	max-width: 360px;
+	max-width: 395px;
     max-height: 300px;
     margin-bottom: 20px;
 }
@@ -232,9 +230,9 @@ h1 {
     background-color:#99E2D0 ;
     font-size: 12px;
     position: absolute;
-    margin-top: -160px;
-    margin-left: 265px;
-    padding: 5px;
+    margin-top: -190px;
+    margin-left: 325px;
+    padding: 7px;
     border-radius: 2px;
 }
 .placephoto {
@@ -246,104 +244,16 @@ h1 {
 }
 .figcaption {
     display: flex;
-    padding: 13px 20px 16px 16px;
+    justify-content: space-between;
+    padding: 16px 16px 16px 16px;
+    align-items: flex-start;
 }
-.hearticon:nth-child(1) {
-    order: 2;
+.figcaption .heartbox {
+    margin-top: -16px;
 }
-.containerheart {
-    order: 1;
-    font-size: 24px;
-    display:flex;
-    margin-left: auto;
-    margin-right: 20px;
-    opacity:1;
-    cursor: pointer;
-  }
-.heart1 {
-    background-clip: text;
-    -webkit-background-clip: text;
-    background: white;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    position: absolute;
-    z-index:1;
-    display: none;
-  }
-.heart2:hover {
-    opacity:0;
-    transition: 0.3s;
-  }
-.heart1:hover {
-    background:-webkit-linear-gradient(180deg, #FF79DA, #9356DC);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    transition-delay: 3s;
- }
-.heart2 {
-    color: white;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background:white;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: black;
-    -moz-text-fill-color: black;
-    position: absolute;
-    margin-left: -24px;
-    z-index:2;
-  }
 .restaurantname {
 margin :0px;
 font-size: 16px;
-}
-.containerheart {
-font-size: 24px;
-}
-.heart1 {
-  background-clip: text;
-  -webkit-background-clip: text;
-  background: white;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  position: absolute;
-  z-index:1;
-  display: none;
-}
-.heart2:hover {
-  opacity:0;
-  transition: 0.5s;
-}
-.heart1:hover {
-  background:-webkit-linear-gradient(180deg, #FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  transition: all .6s ease-out;
-}
-.heart2 {
-  color: white;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background:white;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: black;
-  -moz-text-fill-color: black;
-  position: absolute;
-  margin-left: -24px;
-  z-index:2;
 }
 .city {
     margin :0px;
@@ -600,15 +510,116 @@ display: flex;
     z-index: 2;
 }
 .selectedrestauranttitle {
-    margin-top: 20px;
     margin-bottom: 0px;
+    margin-left: 10px;
 }
 .iconespace {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
 }
-
+.heartbox {
+    order:2;
+    margin-bottom: -15px;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    display: flex;
+    margin-left: auto;
+}
+.emptyheart {
+  opacity:1;
+  transition: opacity 1.5s;
+}
+.fullheart{
+  opacity:0;
+  transition: opacity 1.5s;
+  background:-webkit-linear-gradient(180deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.heartbox:hover .emptyheart {
+  opacity :0;
+ }
+ .heartbox:hover .fullheart {
+   opacity: 1;
+ }
+ .stage {
+    display: flex;
+    width: 0%;
+    height: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background:-webkit-linear-gradient(180deg, #FF79DA, #9356DC);
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    animation:apparition 3s backwards;
+  }
+  @keyframes apparition {
+    0% { 
+      width:100%;
+      height:100%;
+      opacity:1;
+  }
+    70%{
+      width:100%;
+      height:100%;
+      opacity: 0.95;
+    }
+    100% {
+      width:100%;
+      height:100%;
+      opacity:0;
+    }
+  }
+  .dot-spin {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    box-shadow:  0 -18px 0 0  #ffffff, 12.72984px -12.72984px 0 0  #ffffff, 18px 0 0 0  #ffffff, 12.72984px 12.72984px 0 0 rgba(152, 128, 255, 0), 0 18px 0 0 rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 0 rgba(152, 128, 255, 0), -18px 0 0 0 rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 0 rgba(152, 128, 255, 0);
+    animation: dotSpin 1.5s infinite linear;
+  }
+  
+  @keyframes dotSpin {
+    0%,
+    100% {
+      box-shadow: 0 -18px 0 0 #ffffff, 12.72984px -12.72984px 0 0 #ffffff, 18px 0 0 0 #ffffff, 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+    }
+    12.5% {
+      box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 0 #ffffff, 18px 0 0 0 #ffffff, 12.72984px 12.72984px 0 0 #ffffff, 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+    }
+    25% {
+      box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 0 #ffffff, 12.72984px 12.72984px 0 0 #ffffff, 0 18px 0 0 #ffffff, -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+    }
+    37.5% {
+      box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 0 #ffffff, 0 18px 0 0 #ffffff, -12.72984px 12.72984px 0 0 #ffffff, -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+    }
+    50% {
+      box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 0 #ffffff, -12.72984px 12.72984px 0 0 #ffffff, -18px 0 0 0 #ffffff, -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+    }
+    62.5% {
+      box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 0 #ffffff, -18px 0 0 0 #ffffff, -12.72984px -12.72984px 0 0 #ffffff;
+    }
+    75% {
+      box-shadow: 0 -18px 0 0 #ffffff, 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 0 #ffffff, -12.72984px -12.72984px 0 0 #ffffff;
+    }
+    87.5% {
+      box-shadow: 0 -18px 0 0 #ffffff, 12.72984px -12.72984px 0 0 #ffffff, 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 0 #ffffff;
+    }
+  }  
 
 @media screen and (min-width: 810px) {
 .globalplacescontainer {
@@ -616,6 +627,8 @@ display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 .footercontainer {
         display: flex;
@@ -640,10 +653,10 @@ display: flex;
         justify-content: space-evenly;
     }
 .selectedrestauranttitle {
-        padding-right: 20px;
+    margin-left: 18px;
 }
-.containerheart {
-    padding-left: 20px;
+.heartbox {
+    margin-left: 60px;
 }
 }
 @media screen and (max-width: 809px) {
