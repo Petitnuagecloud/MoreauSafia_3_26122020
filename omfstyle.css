@@ -22,6 +22,9 @@ body {
     background-color: white;
     text-align: center;
 }
+.navlogohomepage {
+    justify-content: center;
+}
 .navlogo {
     display: flex;
     width: 100%;
@@ -30,7 +33,7 @@ body {
     align-items: center;
 }
 .logobox {
-    width:100%;
+    width: 100%;
     display:flex;
     justify-content: center;
 }
