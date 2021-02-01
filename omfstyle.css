@@ -98,6 +98,8 @@ h1 {
     font-weight: bold;
     background: linear-gradient(180deg, #FF79DA, #9356DC);
     padding: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     border-radius: 30px;
     border: none;
     box-sizing: border-box;
@@ -110,7 +112,7 @@ h1 {
 }
 .methodpart {
     padding-bottom: 40px;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 .subtitle {
     margin-left: 20px; 
@@ -140,31 +142,32 @@ h1 {
     color:#9356DC;
 }
 .selectsectionfilter {
+    display: flex;
+    justify-content: center;
     background-color: #F6F6F6;
     border: none;
 	border-radius: 25px;
-    margin-top: 30px;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
     align-content: center;
-    justify-content: center;
-    display: flex;
     box-shadow: 0 0 16px #C6C6C6;
 }
 .selectsectionfilter:hover {
     box-shadow: 0 0 16px#797979;
     background-color:#f9f9f9;
     transition: 0.5s;
+    cursor: pointer;
 }
 .selectsectionfiltertext {
-    margin-left: 30px;
-    margin-right: auto;
+    justify-content: center;
+    display: flex;
     font-weight: bold;
     font-size: 14px;
     text-align: center;
     justify-content: center;
+    width: 100%;
+    margin-right: 30px;
 }
 .numbers {
     background-color:#9356DC;
@@ -177,7 +180,7 @@ h1 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-left: -20px;
+	margin-left: -10px;
 }
 .menucontainer {
     background-color: #F6F6F6;
