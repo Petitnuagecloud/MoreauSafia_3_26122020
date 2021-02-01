@@ -291,7 +291,6 @@ font-size: 16px;
   border-radius: 16px;
   padding-left: 16px;
   box-shadow: 0 0 16px #C6C6C6;
-  align-items: left;
   text-align: left;
   font-size: 14px;
   margin-bottom: 16px;
@@ -349,22 +348,22 @@ font-size: 16px;
             opacity: 1;
         }
     } 
-}
+
 .btn1 {
-    Animation-name : fadein ;
-    Animation-delay : 1s ;
-}
-.btn2 {
     Animation-name : fadein ;
     Animation-delay : 0.5s ;
 }
-.btn3 {
+.btn2 {
     Animation-name : fadein ;
     Animation-delay : 1s ;
 }
-.btn4 {
+.btn3 {
     Animation-name : fadein ;
     Animation-delay : 1.5s ;
+}
+.btn4 {
+    Animation-name : fadein ;
+    Animation-delay : 2s ;
 }
 .dishbtn:hover {
     box-shadow: 0 0 16px#797979;
