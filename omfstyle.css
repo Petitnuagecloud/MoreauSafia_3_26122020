@@ -550,8 +550,6 @@ font-size: 16px;
   opacity:0;
   transition: opacity 1.5s;
   background:-webkit-linear-gradient(180deg, #FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
