@@ -30,7 +30,7 @@ body {
     display: flex;
     width: 100%;
     padding-bottom: 16px;
-    padding-top: 40px;
+    padding-top: 30px;
     align-items: center;
 }
 .logobox {
@@ -44,7 +44,7 @@ body {
 .arrow {
     font-size: 24px;
     color:#353535;
-    padding-bottom: 10px;
+    padding-left: 20px;
     margin-left: 5px;
     margin-right: auto;
 }
@@ -57,6 +57,7 @@ body {
 .searchinput {
     display: flex;
     align-items: center;
+    border: 0px;
 }
 .mapicon {
     color:rgb(73, 73, 73);
@@ -65,7 +66,7 @@ body {
     vertical-align: middle;
 }
 #mapsearch {
-  background-color:#eaeaea;
+  background-color:#e5e5e5;
   border: none;
   padding-left: 30px;
   height: 60px;
@@ -73,7 +74,6 @@ body {
   vertical-align: middle;
 }
 ::placeholder {
-    padding-left: 16px;
     color:rgb(73, 73, 73);
     font-size: 17px;
     font-weight: bold;
@@ -144,6 +144,7 @@ h1 {
 }
 .selectsectionfilter {
     display: flex;
+    max-width: 790px;
     justify-content: center;
     background-color: #F6F6F6;
     border: none;
@@ -152,6 +153,7 @@ h1 {
     padding-bottom: 20px;
     margin-bottom: 20px;
     align-content: center;
+    align-items: center;
     box-shadow: 0 0 16px #C6C6C6;
 }
 .selectsectionfilter:hover {
@@ -295,7 +297,7 @@ font-size: 16px;
   font-size: 14px;
   margin-bottom: 16px;
   font-family: "Roboto";
-  min-width: 290px;
+  min-width: 280px;
   max-width: 350px;
   height: 75px;
   z-index:1;
@@ -526,7 +528,8 @@ font-size: 16px;
 .selectedrestauranttitle {
     margin-bottom: 0px;
     margin-left: 10px;
-    margin-right: -10px;
+    margin-right: -10px; 
+    font-size: 27px;
 }
 .iconespace {
     display: flex;
@@ -536,8 +539,6 @@ font-size: 16px;
 .heartbox {
     order:2;
     margin-bottom: -15px;
-    height: 24px;
-    width: 24px;
     cursor: pointer;
     display: flex;
     margin-left: auto;
@@ -670,6 +671,12 @@ font-size: 16px;
 }
 .heartbox {
     margin-left: 60px;
+}
+.selectsection {
+  align-items: center;
+}
+.selectsectionfilter {
+    width: 790px;
 }
 
 .headerphotobox {
