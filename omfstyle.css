@@ -263,9 +263,8 @@ font-size: 16px;
 .menucontainerpage {
     display: flex;
     flex-direction: column;
-    padding-left: 25px;
-    padding-right: 25px;
     background-color: #f6f6f6;
+    padding: 10px;
 }
 .dishbtntitle {
     border-bottom: 3px solid #99E2D0;
@@ -276,9 +275,10 @@ font-size: 16px;
 .dishbtncontainer {
     display: flex;
     flex-direction: column;
+    padding-right: 10px;
+    padding-left: 10px;
     margin-bottom: 30px;
     justify-content: space-between;
-    align-items: baseline;
 }
 .dishbtntitlebox {
     width: 50px;
@@ -295,7 +295,7 @@ font-size: 16px;
   font-size: 14px;
   margin-bottom: 16px;
   font-family: "Roboto";
-  min-width: 330px;
+  min-width: 290px;
   max-width: 350px;
   height: 75px;
   z-index:1;
@@ -515,7 +515,7 @@ font-size: 16px;
 }
 .selectedrestaurant {
     background-color: #f6f6f6;
-    padding: 16px;
+    padding: 5px;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
     object-fit: cover;
@@ -649,6 +649,7 @@ font-size: 16px;
     }
 .menucontainerpage {
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-evenly;
     }
 .commandbtnbox {
