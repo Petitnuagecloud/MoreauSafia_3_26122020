@@ -9,60 +9,53 @@
         <title>Oh my food</title>
     </head>
    <body>
-    <header class="header">
-        <div class="stage">
-            <div class="dot-spin"></div>
+        <header class="header">
+            <div class="stage">
+                <div class="dot-spin"></div>
+            </div>
+            <div class="navlogohomepage navlogo">
+                <img src="public/images/ohmyfood.png" alt="logo Ohmyfood" class="logo"/>
+            </div>
+            <div class="topbar">
+                <form action="traitement.php" class="searchinput">
+                    <div class="mapicon"><i class='fas fa-map-marker-alt'></i></div>
+                    <div><input type="search" id="mapsearch" name="q" placeholder="Paris, Belleville"></div>
+                </form>
+            </div>
+        </header>
+
+        <div class="explorer">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p class="intro">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                <button class="explorerbutton">Explorez nos restaurants</button>
         </div>
-        <div class="navlogohomepage navlogo">
-            <img src="public/images/ohmyfood.png" alt="logo Ohmyfood" class="logo"/>
-        </div>
-        <div class="topbar">
-            <form action="traitement.php" class="searchinput">
-            <div class="mapicon"><i class='fas fa-map-marker-alt'></i></div>
-            <div><input type="search" id="mapsearch" name="q" placeholder="Paris, Belleville"></div>
-            </form>
-        </div>
-    </header>
-    <div class="explorer">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p class="intro">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <button class="explorerbutton">Explorez nos restaurants</button>
-    </div>
 
         <div class="methodpart">
-          <h2 class="subtitle">Fonctionnement</h2> 
+            <h2 class="subtitle">Fonctionnement</h2> 
+                <div class="selectsection">
 
-            <div class="selectsection">
+                    <div class="selectsectionfilter">
+                        <div class="numbers">1</div>
+                        <div class="selectsectionfiltertext"><i class='fas fa-mobile-alt selecticon'></i>Choisissez un restaurant</div>
+                    </div>
 
-           <div class="selectsectionfilter">
-                <div class="numbers">1
-                </div>
-                <div class="selectsectionfiltertext"><i class='fas fa-mobile-alt selecticon'></i>Choisissez un restaurant
-                </div>
-            </div>
+                    <div class="selectsectionfilter">
+                        <div class="numbers">2</div>
+                        <div class="selectsectionfiltertext"><i class='fa fa-list-ul selecticon'></i>Composez votre menu</div>
+                    </div>
 
-          <div class="selectsectionfilter">
-                <div class="numbers">2
-                </div>
-                <div class="selectsectionfiltertext"><i class='fa fa-list-ul selecticon'></i>Composez votre menu
-                </div>
-            </div>
+                    <div class="selectsectionfilter">
+                        <div class="numbers">3</div>
+                        <div class="selectsectionfiltertext"><i class='fas fa-store selecticon'></i>Dégustez au restaurant</div>
+                    </div>
+                </div> 
+        </div>
 
-          <div class="selectsectionfilter">
-                <div class="numbers">3
-                </div>
-                <div class="selectsectionfiltertext"><i class='fas fa-store selecticon'></i>Dégustez au restaurant
-                </div>
-            </div>
-
-        </div> 
-    </div>
-
-    <section class="menucontainer">
+        <section class="menucontainer">
             <div>
-            <h2 class="subtitle">Restaurants</h2>
+                <h2 class="subtitle">Restaurants</h2>
             </div>
-        <div class="globalplacescontainer">
+            <div class="globalplacescontainer">
                 <div class="placecard">
                     <a href="lapalettedugout.html">
                         <div class="placefigure">
@@ -74,7 +67,7 @@
                                 <i class="fa fa-heart-o fa-stack-1x emptyheart"></i>
                                 <i class="fas fa-heart fa-stack-1x fullheart"></i>
                             </div>
-                             <div>
+                            <div>
                                 <h3 class="restaurantname">La palette du goût</h3>
                                 <p class="city">Ménilmontant</p> 
                             </div>
@@ -88,15 +81,15 @@
                             <img class="placephoto" src="public/images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="top view plate">
                             <div class="labelnew">Nouveau</div>
                         </div>
-                         <div class="figcaption">
+                        <div class="figcaption">
                             <div class="fa-stack fa-2x heartbox">
                                 <i class="fa fa-heart-o fa-stack-1x emptyheart"></i>
                                 <i class="fas fa-heart fa-stack-1x fullheart"></i>
                             </div>
-                             <div>
+                            <div>
                                 <h3 class="restaurantname">La note enchantée</h3>
                                 <p class="city">Charonne</p>
-                          </div>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -129,7 +122,7 @@
                                 <i class="fa fa-heart-o fa-stack-1x emptyheart"></i>
                                 <i class="fas fa-heart fa-stack-1x fullheart"></i>
                             </div>
-                             <div>
+                            <div>
                                 <h3 class="restaurantname">Le délice des sens</h3>
                                 <p class="city">Folie-Méricourt</p>
                             </div>
@@ -137,17 +130,16 @@
                     </a>
                 </div>
             </div>
+        </section>
 
-    </section>
-
- <footer class="footer">
-        <h2 class="shrikhandtitle">ohmyfood</h2>
-    <div class="footercontainer">
-        <a href="#" class="footerlink"><i class='fas fa-utensils footericon'></i>Proposer un restaurant</a>
-        <a href="#" class="footerlink"><i class='fas fa-handshake footericon'></i>Devenir partenaire</a>
-        <a href="#" class="footerlink">Mentions légales</a>
-        <a href="mailto:" class="footerlink">Contact</a>
-    </div>
- </footer>
-</body>
+        <footer class="footer">
+                <h2 class="shrikhandtitle">ohmyfood</h2>
+            <div class="footercontainer">
+                <a href="#" class="footerlink"><i class='fas fa-utensils footericon'></i>Proposer un restaurant</a>
+                <a href="#" class="footerlink"><i class='fas fa-handshake footericon'></i>Devenir partenaire</a>
+                <a href="#" class="footerlink">Mentions légales</a>
+                <a href="mailto:" class="footerlink">Contact</a>
+            </div>
+        </footer>
+    </body>
 </html>
